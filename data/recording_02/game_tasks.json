@@ -1,0 +1,80 @@
+{
+  "game": "Empyrion - Galactic Survival",
+  "genre": "Survival / Sandbox",
+  "task_groups": [
+    {
+      "group": "Base Building, Terrain & Logistics",
+      "items": [
+        "Create a new character and start a fresh survival scenario or save",
+        "Perform opening triage after spawning: collect nearest essentials, check oxygen/food, establish safe direction",
+        "Build a tiny starter base with a core, generator, fuel, and a protected interior",
+        "Flatten a patch of ground for building using terrain tools before placing structures",
+        "Dig a short tunnel or bunker entrance and use it as temporary shelter",
+        "Add cargo storage and linked logistics so gathered materials can be pulled into crafting without manual juggling",
+        "Add solar panels and battery/capacitor support to a base if available",
+        "Use terrain deformation to create a trench, berm, or covered entry for defense",
+        "Gain enough XP to unlock the first tech-tree item, then immediately craft or place it"
+      ]
+    },
+    {
+      "group": "Crafting, Mining & Resources",
+      "items": [
+        "Place a portable constructor and craft the first survival tools, ammo, or basic components",
+        "Mine surface rocks for common starter ores in one efficient gathering loop",
+        "Use a detector/drill to locate and mine a buried ore deposit underground",
+        "Salvage components from a wreck, POI, or abandoned structure and bring them home",
+        "Harvest plant fibers, wood/biomass, and animal-derived resources in one mixed route",
+        "Run a full constructor workflow: ore to ingots, ingots to components, components to a finished item",
+        "Deconstruct or recycle an unwanted item and reuse the recovered parts",
+        "Plant a small crop plot or hydroponic setup and harvest the output later",
+        "Catch or collect an aquatic food source if available, then process it for food",
+        "Use the food processor or cooking station to convert raw ingredients into a prepared meal or medicine"
+      ]
+    },
+    {
+      "group": "Vehicles & Space Flight",
+      "items": [
+        "Place an HV starter, finish a simple hover vehicle, and drive it over rough ground",
+        "Refuel, repair, and restock a damaged HV or other vehicle after a trip",
+        "Upgrade a vehicle with storage, harvest, or weapon modules and immediately test the change",
+        "Place an SV starter, finish a small vessel, and perform a clean takeoff and landing",
+        "Fly from the surface of a planet into orbit in a single uninterrupted clip",
+        "Mine asteroid resources or space junk in orbit and store the materials in your ship",
+        "Warp to another planet or star system and exit at a new destination",
+        "Land on a different planet with noticeably different gravity, atmosphere, or terrain",
+        "Place or board a capital vessel and manage onboard systems like fuel, cargo, or constructors",
+        "Dock or park a smaller craft at a base, station, or capital vessel and move items between them"
+      ]
+    },
+    {
+      "group": "Combat, Survival & Exploration",
+      "items": [
+        "Loot a hostile POI carefully without triggering full combat immediately",
+        "Clear a small POI using ranged weapons from cover",
+        "Use melee on a weak creature or drone to conserve ammunition",
+        "Hunt wildlife for food and materials, then process the results back at base",
+        "Defend against a drone or base attack while using cover and base structures to survive",
+        "Approach a hostile area at night or with a low-profile route before engaging enemies",
+        "Use explosives or breaching tools against clustered enemies or structural weak points",
+        "Engage in ship-to-ship combat using mounted weapons if the save is progressed enough",
+        "Prepare for a hazardous planet by equipping the right armor, meds, oxygen, and food before departure",
+        "Recover from a negative survival state such as low oxygen, radiation, cold, or injury",
+        "Compare exploration on two different biome types in one session"
+      ]
+    },
+    {
+      "group": "Economy, Quests & Misc",
+      "items": [
+        "Visit a planetary or orbital trader and buy one useful item or component",
+        "Sell mined, farmed, or crafted goods to a trader and compare value against raw materials",
+        "Progress a dialogue or quest objective in Robinson Protocol or another scenario questline",
+        "Swim across water to reach a shoreline resource node or loot target",
+        "Dive or enter deeper water to retrieve underwater resources or loot if available",
+        "Use the map/scanner to locate a specific POI or resource deposit, then travel to it",
+        "Spawn or load a blueprint, place it, and customize or repair part of the design",
+        "Paint, texture, or cosmetically customize part of a base or vehicle",
+        "Return home from an expedition, sort items through logistics, refuel, and prep for the next trip"
+      ]
+    }
+  ]
+}

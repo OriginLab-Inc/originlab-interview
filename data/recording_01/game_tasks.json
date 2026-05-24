@@ -1,0 +1,87 @@
+{
+  "game": "Astor: Blade of the Monolith",
+  "genre": "Action RPG",
+  "task_groups": [
+    {
+      "group": "Exploration, Spirit Realm & Environmental Discovery",
+      "items": [
+        "Travel from a safe hub/village area into an open combat zone without opening menus",
+        "Traverse a large overworld area while scanning for secrets, collectibles, and challenge markers",
+        "Enter an ancient ruin or temple and record a full exploration pass from entrance to exit",
+        "Move from overworld traversal into a contained combat arena organically",
+        "Find and collect a visible upgrade pickup",
+        "Explore off the main path and uncover an optional chest or hidden reward",
+        "Activate the Spirit Realm to reveal a hidden bridge or path",
+        "Use the Spirit Realm to uncover a secret platforming route",
+        "Solve a simple environmental puzzle that requires switching in and out of the Spirit Realm",
+        "Use Spirit Realm vision to locate a hidden collectible",
+        "Enter a puzzle space, fail once intentionally, then recover and solve it correctly",
+        "Complete a hidden-path discovery sequence from clue recognition to reward pickup"
+      ]
+    },
+    {
+      "group": "Core Combat, Weapon Identity & Combo Play",
+      "items": [
+        "Defeat a basic enemy group using only one weapon's light/heavy combo chain",
+        "Launch enemies and follow with an air combo",
+        "Record a clean dodge-based encounter with minimal damage taken",
+        "Record a parry into punish sequence",
+        "Fight a mixed enemy group and prioritize targets by threat type",
+        "Build and maintain a long combo string across multiple enemies",
+        "Show a fight that uses melee strikes, ranged attacks, and a finisher in one sequence",
+        "Fight in a tight arena where crowd positioning matters",
+        "Showcase each weapon type briefly in separate encounters",
+        "Switch weapons between encounters to demonstrate style differences",
+        "Use one weapon for crowd control and another for a single tougher enemy",
+        "Record the same enemy type fought with two different weapon styles"
+      ]
+    },
+    {
+      "group": "Constructs, Magic, Traversal & Mobility Progression",
+      "items": [
+        "Use a construct summon offensively to start a fight",
+        "Use a construct in the middle of a combo chain rather than only as an opener",
+        "Use a ranged/runic attack to finish an enemy at distance",
+        "Use a construct to control space against a group",
+        "Record a fight where construct cooldown management matters",
+        "Compare a no-construct version of a fight to a construct-assisted version",
+        "Use multiple magical/runic abilities in one encounter",
+        "Complete a traversal route that depends on precise jumps",
+        "Use double jump to access an otherwise unreachable collectible or route",
+        "Record a failed platforming attempt and successful recovery",
+        "Traverse vertically through ruins using ledges, jumps, and movement upgrades",
+        "Use the spider construct/mount in traversal where it clearly improves mobility"
+      ]
+    },
+    {
+      "group": "Bosses, Arenas & High-Intensity Encounters",
+      "items": [
+        "Record a full boss attempt from intro to defeat",
+        "Record a boss retry where the second attempt shows improved pattern recognition",
+        "Focus on a boss fight built around parry timing",
+        "Focus on a boss fight built around dodge and spacing",
+        "Use constructs strategically during a boss fight",
+        "Complete a combat challenge/arena encounter cleanly",
+        "Replay a challenge encounter with a different weapon style",
+        "Record a multi-wave combat challenge as a crowd-control stress test",
+        "Record a low-health recovery fight where survival depends on spacing and dodge timing",
+        "Combine movement and combat by entering a fight directly after a traversal sequence"
+      ]
+    },
+    {
+      "group": "Quests, NPCs, Progression & World Loop",
+      "items": [
+        "Pick up a side quest from a Diokek villager",
+        "Complete a simple fetch-style side objective and return for the reward",
+        "Complete a 'clear enemies' side task and turn it in",
+        "Record a clip focused on NPC interaction, then immediate transition into exploration",
+        "Visit a hub/vendor/reward interaction point and purchase or claim an upgrade-related item",
+        "Show how side quest rewards feed back into progression or combat readiness",
+        "Spend upgrade resources on combo-oriented skills, then immediately demonstrate them in combat",
+        "Record a 'before and after upgrade' clip showing how a new skill changes combat behavior",
+        "Travel from a quest giver to the quest objective and back",
+        "Record a clean navigation clip that demonstrates readable pathing without HUD reliance"
+      ]
+    }
+  ]
+}
