@@ -1,8 +1,8 @@
 {
-  "game": "TODO",
-  "duration_seconds": 0,
+  "game": "SnowRunner",
+  "genre": "Driving / Simulation",
+  "duration_seconds": 6048,
   "segment_count": 1,
   "resolution": "1920x1080",
-  "fps": 60,
-  "recording_date": "2026-05-15"
+  "fps": 60
 }

@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "mechanic_id": "melee_combat",
+    "display_name": "Melee Combat",
+    "category": "combat",
+    "reasoning": "Player engages enemies in close-range combat using swords and axes with combo attacks"
+  },
+  {
+    "mechanic_id": "dodge_roll",
+    "display_name": "Dodge Roll",
+    "category": "combat",
+    "reasoning": "Player uses dodge rolls to evade enemy attacks and reposition during combat"
+  },
+  {
+    "mechanic_id": "ability_usage",
+    "display_name": "Ability Usage",
+    "category": "combat",
+    "reasoning": "Player activates special abilities with cooldowns during combat encounters"
+  },
+  {
+    "mechanic_id": "exploration",
+    "display_name": "World Exploration",
+    "category": "exploration",
+    "reasoning": "Player navigates open environments, discovers hidden areas and collectibles"
+  },
+  {
+    "mechanic_id": "puzzle_solving",
+    "display_name": "Puzzle Solving",
+    "category": "puzzle",
+    "reasoning": "Player solves environmental puzzles to progress through areas and unlock paths"
+  },
+  {
+    "mechanic_id": "boss_fight",
+    "display_name": "Boss Fight",
+    "category": "combat",
+    "reasoning": "Player faces large boss enemies with unique attack patterns requiring specific strategies"
+  },
+  {
+    "mechanic_id": "item_collection",
+    "display_name": "Item Collection",
+    "category": "progression",
+    "reasoning": "Player collects health orbs, currency, and upgrade materials scattered through the world"
+  },
+  {
+    "mechanic_id": "cutscene",
+    "display_name": "Cutscene / Dialogue",
+    "category": "narrative",
+    "reasoning": "Non-interactive story sequences and NPC dialogue that advance the narrative"
+  }
+]

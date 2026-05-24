@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "mechanic_id": "vehicle_driving",
+    "display_name": "Vehicle Driving",
+    "category": "navigation",
+    "reasoning": "Player drives trucks and vehicles across challenging terrain with realistic physics"
+  },
+  {
+    "mechanic_id": "cargo_delivery",
+    "display_name": "Cargo Delivery",
+    "category": "mission",
+    "reasoning": "Player picks up and delivers cargo between locations to complete contracts"
+  },
+  {
+    "mechanic_id": "route_planning",
+    "display_name": "Route Planning",
+    "category": "strategy",
+    "reasoning": "Player studies the map and plans routes to avoid obstacles and find optimal paths"
+  },
+  {
+    "mechanic_id": "vehicle_recovery",
+    "display_name": "Vehicle Recovery",
+    "category": "problem_solving",
+    "reasoning": "Player uses winch, recovery points, and other vehicles to unstuck or recover stuck trucks"
+  },
+  {
+    "mechanic_id": "vehicle_customization",
+    "display_name": "Vehicle Customization",
+    "category": "progression",
+    "reasoning": "Player equips different tires, engines, and attachments to vehicles in the garage"
+  },
+  {
+    "mechanic_id": "fuel_management",
+    "display_name": "Fuel Management",
+    "category": "survival",
+    "reasoning": "Player monitors fuel levels and refuels at stations or fuel trailers"
+  },
+  {
+    "mechanic_id": "map_exploration",
+    "display_name": "Map Exploration",
+    "category": "exploration",
+    "reasoning": "Player discovers new watchtowers, upgrades, and locations by driving to unexplored areas"
+  }
+]

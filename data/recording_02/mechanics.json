@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "mechanic_id": "resource_gathering",
+    "display_name": "Resource Gathering",
+    "category": "survival",
+    "reasoning": "Player mines ores, harvests plants, and collects materials from the environment"
+  },
+  {
+    "mechanic_id": "base_building",
+    "display_name": "Base Building",
+    "category": "construction",
+    "reasoning": "Player places blocks and structures to build bases, ships, and vehicles"
+  },
+  {
+    "mechanic_id": "crafting",
+    "display_name": "Crafting",
+    "category": "survival",
+    "reasoning": "Player uses gathered resources to craft tools, weapons, and equipment via menus"
+  },
+  {
+    "mechanic_id": "combat_fps",
+    "display_name": "FPS Combat",
+    "category": "combat",
+    "reasoning": "Player engages hostile creatures and drones using ranged weapons in first-person"
+  },
+  {
+    "mechanic_id": "vehicle_piloting",
+    "display_name": "Vehicle Piloting",
+    "category": "navigation",
+    "reasoning": "Player pilots hover vessels, small vessels, and capital vessels through space and atmosphere"
+  },
+  {
+    "mechanic_id": "inventory_management",
+    "display_name": "Inventory Management",
+    "category": "survival",
+    "reasoning": "Player organizes items across personal inventory, storage containers, and constructors"
+  },
+  {
+    "mechanic_id": "exploration",
+    "display_name": "Planet Exploration",
+    "category": "exploration",
+    "reasoning": "Player explores planetary surfaces, discovers POIs, and navigates alien terrain on foot"
+  },
+  {
+    "mechanic_id": "survival_needs",
+    "display_name": "Survival Needs",
+    "category": "survival",
+    "reasoning": "Player manages food, health, stamina, and oxygen levels to stay alive"
+  }
+]

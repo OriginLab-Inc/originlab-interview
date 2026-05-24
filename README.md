@@ -8,32 +8,53 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## Download Data
+
+Download the sample recordings (~7 hours of gameplay across 3 games):
+
+```bash
+# Download input logs only (required, ~100 MB)
+python download_data.py --no-video
+
+# Download everything including video files (~20 GB)
+python download_data.py
+```
+
+Download links expire after 7 days. Contact us if they have expired.
+
 ## Explore the Data
 
 ```bash
 python examples/explore_data.py data/recording_01/
 ```
 
-This will print a summary of the recording: event counts, activity timeline, camera stats, and game mechanics.
+This prints a summary of the recording: event counts, activity timeline, camera stats, and game mechanics.
 
 ## Assignment
 
 See **[ASSIGNMENT.md](ASSIGNMENT.md)** for the full project brief.
 
+## Sample Recordings
+
+| Recording | Game | Genre | Duration |
+|-----------|------|-------|----------|
+| recording_01 | Astor: Blade of the Monolith | Action RPG | ~181 min |
+| recording_02 | Empyrion - Galactic Survival | Survival / Sandbox | ~124 min |
+| recording_03 | SnowRunner | Driving / Simulation | ~101 min |
+
 ## Project Structure
 
 ```
+download_data.py   # Downloads sample data from presigned URLs
 src/
   parser.py        # Input log parser (msgpack -> activity summary)
   telemetry.py     # Camera telemetry parser (position, rotation, movement stats)
   schemas.py       # Data models: GameMechanic, ActivityPhase, Highlight
   loader.py        # Loads all data for a recording directory
 data/
-  recording_01/    # ~45 min gameplay recording
-  recording_02/    # ~45 min gameplay recording
-  recording_03/    # ~45 min gameplay recording
-videos/
-  README.md        # Links to download video files
+  recording_01/    # Astor: Blade of the Monolith (Action RPG)
+  recording_02/    # Empyrion - Galactic Survival (Survival / Sandbox)
+  recording_03/    # SnowRunner (Driving / Simulation)
 examples/
   explore_data.py  # Quick data exploration script
 ```
@@ -47,3 +68,5 @@ Each recording directory contains:
 - **`mechanics.json`** — List of known game mechanics for this game (mechanic_id, display_name, category).
 
 Camera telemetry (position, rotation, FOV) is embedded in the input log and extracted automatically by the telemetry parser.
+
+Video files (screen.mp4) are optional — useful for visual context but not needed by the pipeline.
