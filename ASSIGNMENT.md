@@ -4,9 +4,7 @@
 
 | | |
 |---|---|
-| **Duration** | 4-5 days |
-| **Compensation** | $300 (paid regardless of outcome) |
-| **Language** | Python 3.11+ |
+| **Stack** | Python 3.11+ (backend) / Framework of your choice (frontend) |
 | **Deliverable** | GitHub repo or zip |
 
 ---
@@ -24,40 +22,30 @@ We need a system that automatically analyzes these signals to **detect activity 
 
 ## What You Receive
 
-### 1. Sample Code Package (`originlab-interview/`)
+### 1. Sample Code Package
 
-A standalone Python package with:
+A standalone Python package with parsers for our data formats:
 
-```
-originlab-interview/
-  README.md                  # Setup instructions
-  requirements.txt           # msgpack, pydantic
-  src/
-    parser.py                # Input log parser (reads msgpack, outputs activity summary)
-    telemetry.py             # Camera telemetry parser (reads JSONL, outputs position/movement stats)
-    schemas.py               # Data models: GameMechanic, VideoSegment, Highlight
-    loader.py                # Helper to load all data for a recording
-  data/
-    recording_01/
-      input_log.msgpack      # Raw input events
-      camera_telemetry.jsonl # Camera frames
-      metadata.json          # Game name, duration, segment info
-      mechanics.json         # Game mechanics definitions for this game
-    recording_02/
-      ...
-    recording_03/
-      ...
-  videos/
-    README.md                # Links to download video files (2-3 hours total)
-```
+- `src/parser.py` — Input log parser (reads msgpack, outputs activity summary with event counts and time buckets)
+- `src/telemetry.py` — Camera telemetry parser (reads position, rotation, movement stats from the same msgpack)
+- `src/schemas.py` — Data models: `GameMechanic`, `ActivityPhase`, `Highlight`
+- `src/loader.py` — Helper to load all data for a recording directory
 
-### 2. Video Files
+### 2. Sample Recordings
 
-2-3 hours of gameplay footage across multiple games, downloadable via provided links. Each recording has a matching `input_log.msgpack` and `camera_telemetry.jsonl` in the data directory.
+3 recordings across different game genres (~7 hours total), downloaded via `python download_data.py`:
+
+| Recording | Game | Genre |
+|-----------|------|-------|
+| recording_01 | Astor: Blade of the Monolith | Action RPG |
+| recording_02 | Empyrion - Galactic Survival | Survival / Sandbox |
+| recording_03 | SnowRunner | Driving / Simulation |
+
+Each recording includes an input log (msgpack), metadata, and game mechanics definitions.
 
 ### 3. Game Mechanics Definitions
 
-For each game in the sample data, a `mechanics.json` file listing the known game mechanics:
+For each game, a `mechanics.json` file listing known game mechanics:
 
 ```json
 [
@@ -66,12 +54,6 @@ For each game in the sample data, a `mechanics.json` file listing the known game
     "display_name": "Resource Gathering",
     "category": "survival",
     "reasoning": "Player collects wood, stone, and other materials from the environment"
-  },
-  {
-    "mechanic_id": "base_building",
-    "display_name": "Base Building",
-    "category": "construction",
-    "reasoning": "Player places structures and builds shelters"
   }
 ]
 ```
@@ -80,13 +62,13 @@ For each game in the sample data, a `mechanics.json` file listing the known game
 
 ## The Assignment
 
-Build a pipeline that takes a recording's input log, camera telemetry, and game mechanics definitions as input, and outputs **a list of highlighted segments** identifying the most interesting moments.
+Build a full-stack application that analyzes gameplay recordings and presents the results in a usable interface.
 
-### Part 1: Activity Classification (Days 1-2)
+### Part 1: Activity Classification
 
 Analyze the input log and camera telemetry to classify each moment in the recording into activity phases.
 
-**Input:** `input_log.msgpack` + `camera_telemetry.jsonl`
+**Input:** `input_log.msgpack` (contains both input events and camera telemetry)
 
 **Output:** A timeline of classified activity phases:
 
@@ -114,7 +96,7 @@ You may add more phases if you identify distinct patterns in the data.
 - Input diversity (many different keys = gameplay, same key repeated = menu navigation)
 - Gaps between events (long gaps = idle)
 
-### Part 2: Highlight Detection (Days 3-4)
+### Part 2: Highlight Detection
 
 Use the activity classification and game mechanics definitions to identify the most interesting moments worth highlighting.
 
@@ -131,14 +113,6 @@ Use the activity classification and game mechanics definitions to identify the m
     "confidence": 0.91,
     "mechanics_matched": ["combat", "weapon_switching"],
     "reason": "High input rate (180 events/min), rapid camera rotation (avg 45 deg/s), multiple weapon key presses detected"
-  },
-  {
-    "start": 120.0,
-    "end": 155.0,
-    "label": "Resource gathering session",
-    "confidence": 0.75,
-    "mechanics_matched": ["resource_gathering"],
-    "reason": "Repeated interaction key presses near stationary camera positions, consistent with harvesting pattern"
   }
 ]
 ```
@@ -150,7 +124,25 @@ Use the activity classification and game mechanics definitions to identify the m
 - Unusual patterns (sudden spike after long idle = something happened)
 - Longer sustained activity sequences over brief spikes
 
-### Part 3: Documentation & Testing (Day 5)
+### Part 3: User Interface
+
+Build a web interface that lets a user explore the analysis results for any recording. The UI should make the data useful — not just display it.
+
+**Requirements:**
+- Load and display results for any of the 3 sample recordings
+- Show the activity timeline visually (what phase is happening at each point in time)
+- Display detected highlights with their details (label, confidence, matched mechanics)
+- Let the user click on a highlight or timeline section to see more detail
+- Show the game mechanics for the recording and which ones were detected
+
+**We're evaluating:**
+- Can you design an interface that makes complex data understandable?
+- Do your layout, interaction, and information hierarchy choices make sense?
+- Is it functional and usable, not just a data dump?
+
+Use whatever frontend framework you're comfortable with. We care about the result, not the stack.
+
+### Part 4: Documentation & Testing
 
 - Write a brief technical document (1-2 pages) explaining:
   - Your classification approach and why you chose it
@@ -166,22 +158,12 @@ Use the activity classification and game mechanics definitions to identify the m
 
 Submit a GitHub repository (or zip) containing:
 
-1. **Working pipeline** that processes any recording from the sample data and outputs highlights
-2. **`classify.py`** — runs activity classification on a recording directory
-3. **`highlight.py`** — runs highlight detection and outputs results
-4. **`results/`** — pre-computed outputs for all sample recordings
-5. **`APPROACH.md`** — technical writeup (1-2 pages)
-6. **Tests** — at least basic coverage for the classifier and detector
-
-### How to Run
-
-Your submission should work with:
-
-```bash
-pip install -r requirements.txt
-python classify.py data/recording_01/
-python highlight.py data/recording_01/
-```
+1. **Working analysis pipeline** that processes any recording from the sample data
+2. **Web interface** to explore the results
+3. **Pre-computed results** for all 3 sample recordings
+4. **`APPROACH.md`** — technical writeup (1-2 pages)
+5. **Tests** — at least basic coverage for the classifier and detector
+6. **Setup instructions** — we should be able to run your project with minimal steps
 
 ---
 
@@ -189,37 +171,27 @@ python highlight.py data/recording_01/
 
 | Criteria | Weight | What We Look For |
 |----------|--------|-----------------|
-| **Algorithm Quality** | 30% | Does the classifier produce meaningful results? Are the highlights actually interesting? |
-| **Code Quality** | 25% | Clean, readable, well-structured code. Good naming. No unnecessary complexity. |
-| **Technical Judgment** | 20% | Smart use of signals. Reasonable thresholds. Good tradeoffs between precision and recall. |
-| **Documentation** | 15% | Clear explanation of approach. Honest about limitations. Thoughtful about scaling. |
-| **Testing** | 10% | Tests that verify behavior, not just coverage. Edge cases considered. |
+| **Algorithm Quality** | 25% | Does the classifier produce meaningful results? Are the highlights actually interesting? |
+| **UI / Product Sense** | 25% | Is the interface usable and well-designed? Does it make the data understandable? Good information hierarchy? |
+| **Code Quality** | 20% | Clean, readable, well-structured code across both frontend and backend. |
+| **Technical Judgment** | 15% | Smart use of signals. Reasonable thresholds. Good tradeoffs. |
+| **Documentation & Testing** | 15% | Clear explanation of approach. Honest about limitations. Tests that verify behavior. |
 
 ### What We Value
 
 - **Pragmatic solutions** over perfect ones. A rule-based classifier that works well beats a half-finished ML pipeline.
 - **Clear thinking** over clever code. We want to understand your reasoning.
 - **Honest assessment** of what works and what doesn't. Tell us where your approach breaks down.
+- **Product instinct**. The UI should feel like something a real user would want to use, not a developer debug tool.
 - **Production awareness**. Think about: What if there are 10,000 recordings? What if a new game has completely different mechanics?
 
 ### What We Don't Want
 
 - Over-engineered solutions with unnecessary abstractions
 - Copy-pasted ML boilerplate without understanding
-- Perfect code with no working output
+- Perfect backend with no usable interface
+- A pretty UI with no working analysis behind it
 - Unsubstantiated claims about accuracy
-
----
-
-## Timeline
-
-| Day | Focus | Expected Output |
-|-----|-------|----------------|
-| 1 | Explore the data. Understand the signals. | Notes on patterns you observe. |
-| 2 | Build the activity classifier. | Working classifier with initial results. |
-| 3 | Build the highlight detector. Wire up mechanics matching. | Working highlight pipeline. |
-| 4 | Tune, test, handle edge cases. | Refined output, tests passing. |
-| 5 | Write documentation. Final polish. | Complete submission. |
 
 ---
 
