@@ -1,44 +1,74 @@
 [
   {
-    "mechanic_id": "vehicle_driving",
-    "display_name": "Vehicle Driving",
-    "category": "navigation",
-    "reasoning": "Player drives trucks and vehicles across challenging terrain with realistic physics"
-  },
-  {
-    "mechanic_id": "cargo_delivery",
-    "display_name": "Cargo Delivery",
-    "category": "mission",
-    "reasoning": "Player picks up and delivers cargo between locations to complete contracts"
-  },
-  {
-    "mechanic_id": "route_planning",
-    "display_name": "Route Planning",
-    "category": "strategy",
-    "reasoning": "Player studies the map and plans routes to avoid obstacles and find optimal paths"
-  },
-  {
-    "mechanic_id": "vehicle_recovery",
-    "display_name": "Vehicle Recovery",
-    "category": "problem_solving",
-    "reasoning": "Player uses winch, recovery points, and other vehicles to unstuck or recover stuck trucks"
-  },
-  {
-    "mechanic_id": "vehicle_customization",
-    "display_name": "Vehicle Customization",
-    "category": "progression",
-    "reasoning": "Player equips different tires, engines, and attachments to vehicles in the garage"
-  },
-  {
-    "mechanic_id": "fuel_management",
-    "display_name": "Fuel Management",
+    "mechanic_id": "farming",
+    "display_name": "Farming & Crop Management",
     "category": "survival",
-    "reasoning": "Player monitors fuel levels and refuels at stations or fuel trailers"
+    "reasoning": "Player plants, waters, and harvests crops near the mansion using tools or magic"
   },
   {
-    "mechanic_id": "map_exploration",
-    "display_name": "Map Exploration",
+    "mechanic_id": "cooking",
+    "display_name": "Cooking & Potion Brewing",
+    "category": "crafting",
+    "reasoning": "Player cooks recipes from gathered ingredients and brews potions at the cauldron"
+  },
+  {
+    "mechanic_id": "crafting",
+    "display_name": "Crafting & Tool Making",
+    "category": "crafting",
+    "reasoning": "Player uses the crafting bench to make tools, quest items, and household objects"
+  },
+  {
+    "mechanic_id": "exploration",
+    "display_name": "Island Exploration",
     "category": "exploration",
-    "reasoning": "Player discovers new watchtowers, upgrades, and locations by driving to unexplored areas"
+    "reasoning": "Player explores biomes, discovers landmarks, and collects location-specific resources"
+  },
+  {
+    "mechanic_id": "magic",
+    "display_name": "Magic & Rituals",
+    "category": "magic",
+    "reasoning": "Player casts spells, performs rituals at altars, and creates amulets and talismans"
+  },
+  {
+    "mechanic_id": "puzzle_solving",
+    "display_name": "Puzzle Solving",
+    "category": "puzzle",
+    "reasoning": "Player solves memory, projectile, and placement puzzles scattered across the island"
+  },
+  {
+    "mechanic_id": "social",
+    "display_name": "Social & NPC Relationships",
+    "category": "social",
+    "reasoning": "Player gives gifts to NPCs, builds relationships, and completes commissions"
+  },
+  {
+    "mechanic_id": "animal_care",
+    "display_name": "Animal Care & Taming",
+    "category": "creatures",
+    "reasoning": "Player feeds, tames, and breeds domesticated animals, and rides Tzoru mounts"
+  },
+  {
+    "mechanic_id": "fishing",
+    "display_name": "Fishing",
+    "category": "gathering",
+    "reasoning": "Player uses fishing rod with bait and completes reeling sequences at various water types"
+  },
+  {
+    "mechanic_id": "resource_gathering",
+    "display_name": "Resource Gathering & Mining",
+    "category": "gathering",
+    "reasoning": "Player harvests lumber, herbs, minerals, and forageables from the wilderness"
+  },
+  {
+    "mechanic_id": "flying",
+    "display_name": "Broom Flight",
+    "category": "traversal",
+    "reasoning": "Player crafts and enchants a broom for aerial traversal to reach elevated or remote areas"
+  },
+  {
+    "mechanic_id": "questing",
+    "display_name": "Quest Progression",
+    "category": "narrative",
+    "reasoning": "Player follows multi-step quest chains involving dialogue, crafting, travel, and turn-in"
   }
 ]

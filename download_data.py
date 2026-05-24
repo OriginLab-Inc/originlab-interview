@@ -35,14 +35,14 @@ RECORDINGS = {
         },
     },
     "recording_03": {
-        "game": "SnowRunner",
-        "genre": "Driving / Simulation",
-        "duration_seconds": 6048,
+        "game": "The Witch of Fern Island",
+        "genre": "Life Sim / RPG",
+        "duration_seconds": 8568,
         "resolution": "1920x1080",
         "fps": 60,
         "files": {
-            "input_log.msgpack": "https://originlab-collections.s3.us-east-1.amazonaws.com/videogame/snowrunner/samples/showcase_deepmind.msgpack?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260524%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260524T204649Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=05dc58b9fdd605cb5b6b9558ea35f98f5031b3ca46be0d80d818dae45a46400b",
-            "screen.mp4": "https://originlab-collections.s3.us-east-1.amazonaws.com/videogame/snowrunner/samples/showcase_deepmind.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260524%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260524T204649Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5d631273639d435fa479ebe498aead7c2570a13d16710d43556879dcc5124246",
+            "input_log.msgpack": "https://originlab-collections.s3.us-east-1.amazonaws.com/recordings/7c80264a-043b-4131-9b99-cb2fc28e3cfb/segment-1/input_log.msgpack?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260524%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260524T215351Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c3e384f7a508093a53eb47e498b3251ff2cbe924c4116f456a310fcff33f8f34",
+            "screen.mp4": "https://originlab-collections.s3.us-east-1.amazonaws.com/recordings/7c80264a-043b-4131-9b99-cb2fc28e3cfb/segment-1/screen.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260524%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260524T215351Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=69d4dcc383f954e2c64479b0e532ecfa6707503a1d9482e80dddbe1f0f08a4ba",
         },
     },
 }

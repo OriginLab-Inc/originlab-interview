@@ -1,0 +1,80 @@
+{
+  "game": "The Witch of Fern Island",
+  "genre": "Life Sim / RPG",
+  "task_groups": [
+    {
+      "group": "Farming, Cooking & Crafting",
+      "items": [
+        "Wake up at the Witch's Mansion and perform a short morning routine: check mail, tools, and the plan for the day",
+        "Plant a first crop plot near the mansion using appropriate seeds and soil",
+        "Water or tend crops using ordinary tools or magic if available in the save",
+        "Harvest mature crops and store them by type for later cooking or crafting",
+        "Discover or create a magical crop/vegetable through essence or progression systems",
+        "Cook a simple recipe from ingredients gathered that same day",
+        "Cook a more advanced recipe requiring multiple ingredients or processed components",
+        "Brew a potion at the cauldron and immediately use or store it",
+        "Craft fertilizer, fodder, or another farm support item and apply it to crops or animals",
+        "Use the crafting bench to make a new tool, quest item, or household object"
+      ]
+    },
+    {
+      "group": "Exploration, Swimming & Flying",
+      "items": [
+        "Explore a new biome and collect at least three location-specific resources",
+        "Use the map or quest markers to reach a remote landmark or puzzle site",
+        "Swim across a shoreline, river, or lake to reach a resource patch or hidden item",
+        "Use swimming plus shoreline exploration to reach a hidden resource, chest, or puzzle area",
+        "Craft and enchant the broom if the save is at that quest stage",
+        "Use broom flight to reach an elevated cliff, hidden path, or remote collectible",
+        "Compare reaching the same destination on foot versus by broom",
+        "Perform a full day loop that includes farming, crafting, socializing, and returning home at night"
+      ]
+    },
+    {
+      "group": "Resource Gathering & Mining",
+      "items": [
+        "Gather a mixed set of forageables around Barrow End and the nearby wilderness",
+        "Harvest lumber, herbs, and minerals in one efficient route",
+        "Mine a metal or stone node and return the materials to the mansion",
+        "Perform a full crafting chain: gather, process, craft, and then use the final item",
+        "Create a dye, clothing piece, or cosmetic item for Abrill",
+        "Change Abrill's outfit or visible gear to match a goal, event, or environment",
+        "Rearrange or decorate a room in the mansion with a more personalized layout"
+      ]
+    },
+    {
+      "group": "Magic, Puzzles & Quests",
+      "items": [
+        "Cast a farming-assist or everyday spell during routine island work",
+        "Perform a ritual at an altar or magical station",
+        "Create an amulet or talisman and equip it",
+        "Gather ingredients for a broom-related, ritual-related, or protection-related quest and execute the required craft/ritual",
+        "Solve a memory/order puzzle and collect the reward",
+        "Solve a projectile puzzle such as ringing bells with thrown items",
+        "Solve a placement or stone puzzle and collect the resulting item or recipe",
+        "Complete a quest step that includes a dialogue choice with an NPC",
+        "Advance a character-specific quest chain with multiple prerequisites or stages",
+        "Track a multi-step quest from discovery to crafting to travel to turn-in",
+        "Open magical chests or special loot containers during exploration",
+        "Use the compendium to identify a needed ingredient and then route a collection plan around it"
+      ]
+    },
+    {
+      "group": "Social, Economy & Creatures",
+      "items": [
+        "Give a liked gift to an NPC and increase the relationship level",
+        "Visit NPCs from multiple cultures in one route and compare the interactions",
+        "Sell gathered or crafted goods at a market or trader",
+        "Buy seeds, bait, or crafting ingredients from a vendor and use them the same day",
+        "Complete a noticeboard commission or small local errand if available",
+        "Care for a domesticated animal by feeding, checking supplies, or collecting outputs",
+        "Capture, tame, or domesticate a new animal if the save has access to the mechanic",
+        "Ride or rent a Tzoru mount for traversal and movement variety",
+        "Set up or progress an animal breeding loop if the current save has unlocked it",
+        "Possess the cat familiar and access a narrow exploration path or secret space",
+        "Use a fishing rod with bait and complete the reeling sequence successfully",
+        "Fish in a different water type or at a different time of day from a previous clip"
+      ]
+    }
+  ]
+}

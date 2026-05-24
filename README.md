@@ -40,7 +40,7 @@ See **[ASSIGNMENT.md](ASSIGNMENT.md)** for the full project brief.
 |-----------|------|-------|----------|
 | recording_01 | Astor: Blade of the Monolith | Action RPG | ~181 min |
 | recording_02 | Empyrion - Galactic Survival | Survival / Sandbox | ~124 min |
-| recording_03 | SnowRunner | Driving / Simulation | ~101 min |
+| recording_03 | The Witch of Fern Island | Life Sim / RPG | ~143 min |
 
 ## Project Structure
 
@@ -54,7 +54,7 @@ src/
 data/
   recording_01/    # Astor: Blade of the Monolith (Action RPG)
   recording_02/    # Empyrion - Galactic Survival (Survival / Sandbox)
-  recording_03/    # SnowRunner (Driving / Simulation)
+  recording_03/    # The Witch of Fern Island (Life Sim / RPG)
 examples/
   explore_data.py  # Quick data exploration script
 ```
