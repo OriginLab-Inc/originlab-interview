@@ -3,7 +3,7 @@
 Run this once after cloning the repo:
     python download_data.py
 
-Links expire 7 days after generation (May 31, 2026).
+Links expire 7 days after generation (June 5, 2026).
 If expired, contact us for fresh links.
 """
 
@@ -19,8 +19,8 @@ RECORDINGS = {
         "resolution": "1920x1080",
         "fps": 60,
         "files": {
-            "input_log.msgpack": "https://originlab-collections.s3.us-east-1.amazonaws.com/recordings/04222cdd-6912-497d-9bc9-002981c888c7/segment-1/input_log.msgpack?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260524%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260524T204648Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=674b46d8d04f04622ac4c27a8d2de6443d81247cff809d35e37f3a4f7ece7046",
-            "screen.mp4": "https://originlab-collections.s3.us-east-1.amazonaws.com/recordings/04222cdd-6912-497d-9bc9-002981c888c7/segment-1/screen.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260524%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260524T204648Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=133c7ab06d012ac6be0873e6f3f8a8f32a7b8167418a9ea25d805d6d623d9edc",
+            "input_log.msgpack": "https://originlab-assets.s3.amazonaws.com/recordings/04222cdd-6912-497d-9bc9-002981c888c7/segment-1/input_log.msgpack?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260529%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260529T183946Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0da1f5284e8f8744cdaf498732abe1f2171e0444873172e70dcd3b5f241bb849",
+            "screen.mp4": "https://originlab-assets.s3.amazonaws.com/recordings/04222cdd-6912-497d-9bc9-002981c888c7/segment-1/screen.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260529%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260529T183946Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2e240bc37ff0861d80f3315c8e052edf630c75e70d5428f5a57785b7dc9b7c88",
         },
     },
     "recording_02": {
@@ -30,8 +30,8 @@ RECORDINGS = {
         "resolution": "1920x1080",
         "fps": 60,
         "files": {
-            "input_log.msgpack": "https://originlab-collections.s3.us-east-1.amazonaws.com/recordings/bd43b50c-de99-49f8-aa04-3cdac79a97a5/segment-1/input_log.msgpack?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260524%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260524T204649Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=11a0ed71ee877c14756a2b24123748c119ab7cb4fb06c88223363e887f6f2a74",
-            "screen.mp4": "https://originlab-collections.s3.us-east-1.amazonaws.com/recordings/bd43b50c-de99-49f8-aa04-3cdac79a97a5/segment-1/screen.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260524%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260524T204649Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b934fbfc261d94eea154d7ea7ea8b0ab5c7e9dc12ceb25f822b127f585d27108",
+            "input_log.msgpack": "https://originlab-assets.s3.amazonaws.com/recordings/bd43b50c-de99-49f8-aa04-3cdac79a97a5/segment-1/input_log.msgpack?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260529%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260529T183946Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fe30712810b1c86b597e4e1122c73c50ffe693379c485d5724f1cab369941b3f",
+            "screen.mp4": "https://originlab-assets.s3.amazonaws.com/recordings/bd43b50c-de99-49f8-aa04-3cdac79a97a5/segment-1/screen.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260529%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260529T183946Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=72856d14aa4c0eac8389cba0de7a0ef6b103404fbf86d8ac1eedf35d6e0ec7f3",
         },
     },
     "recording_03": {
@@ -41,8 +41,8 @@ RECORDINGS = {
         "resolution": "1920x1080",
         "fps": 60,
         "files": {
-            "input_log.msgpack": "https://originlab-collections.s3.us-east-1.amazonaws.com/recordings/7c80264a-043b-4131-9b99-cb2fc28e3cfb/segment-1/input_log.msgpack?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260524%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260524T215351Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c3e384f7a508093a53eb47e498b3251ff2cbe924c4116f456a310fcff33f8f34",
-            "screen.mp4": "https://originlab-collections.s3.us-east-1.amazonaws.com/recordings/7c80264a-043b-4131-9b99-cb2fc28e3cfb/segment-1/screen.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260524%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260524T215351Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=69d4dcc383f954e2c64479b0e532ecfa6707503a1d9482e80dddbe1f0f08a4ba",
+            "input_log.msgpack": "https://originlab-assets.s3.amazonaws.com/recordings/7c80264a-043b-4131-9b99-cb2fc28e3cfb/segment-1/input_log.msgpack?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260529%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260529T183946Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8d9f9a06d1a1fb280a9de5cbce9c95c312f0e17d0a04590c39bcbde651627b46",
+            "screen.mp4": "https://originlab-assets.s3.amazonaws.com/recordings/7c80264a-043b-4131-9b99-cb2fc28e3cfb/segment-1/screen.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDVFRA5HZOJLNORJ%2F20260529%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260529T183946Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0110b66c4ce5279fd7b93adaef69d05949fc4944b5b11393a80dfcf1ce851804",
         },
     },
 }
