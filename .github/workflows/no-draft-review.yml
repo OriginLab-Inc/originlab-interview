@@ -1,0 +1,30 @@
+name: No review requests on drafts
+
+# pull_request_target so it also works on fork PRs; no code is checked out.
+on:
+  pull_request_target:
+    types: [review_requested]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  unrequest:
+    if: github.event.pull_request.draft
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+          REVIEWER: ${{ github.event.requested_reviewer.login }}
+          TEAM: ${{ github.event.requested_team.slug }}
+        run: |
+          if [ -n "$TEAM" ]; then
+            gh api -X DELETE "repos/$REPO/pulls/$PR/requested_reviewers" -f "team_reviewers[]=$TEAM"
+            who="team $TEAM"
+          else
+            gh api -X DELETE "repos/$REPO/pulls/$PR/requested_reviewers" -f "reviewers[]=$REVIEWER"
+            who="$REVIEWER"
+          fi
+          gh pr comment "$PR" -R "$REPO" --body "Removed review request for $who: this PR is a draft. Mark it **Ready for review** first, then request reviewers."
